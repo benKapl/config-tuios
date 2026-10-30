@@ -126,6 +126,8 @@ preset = "tmux"
 
 [keybindings.global]
 command_palette = ["ctrl+alt+p"]   # libère ctrl+p (vim, fish, zellij)
+prev_workspace = ["shift+alt+h"]   
+next_workspace = ["shift+alt+l"]   
 
 [keybindings.terminal_mode]
 terminal_focus_left  = ["alt+h"]   # libère alt+flèches (mot par mot dans le shell)
@@ -147,3 +149,13 @@ key = "prefix+alt+s"
 type = "popup"
 command = 'dir=$(find $ws -mindepth 1 -maxdepth 2 -type d | fzf) && tuios switch-session --create --cwd "$dir" "$(basename "$dir")"'
 description = "Open a project"
+
+[spotlight]
+enabled = false
+
+[appearance.sidebar]
+enabled = false
+
+[appearance]
+zoom_borderless = false
+zoom_size = 95
