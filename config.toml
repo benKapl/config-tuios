@@ -153,9 +153,16 @@ description = "Open a project"
 [spotlight]
 enabled = false
 
+[screensaver]
+enabled = true
+idle_minutes = 5        # 1 à 240
+while_busy = false      # true = démarre même si un pane exécute une commande]
+
 [appearance.sidebar]
-enabled = false
+enabled = true
 
 [appearance]
 zoom_borderless = false
 zoom_size = 95
+window_title_format = "{title}"
+calm = false

@@ -1,0 +1,53 @@
+{
+  "name": "ihm-anomalie",
+  "created_at": "2026-11-03T15:12:13.212429122+01:00",
+  "version": 2,
+  "auto_tiling": true,
+  "tiling_scheme": "spiral",
+  "master_ratio": 0.5,
+  "windows": [
+    {
+      "x": 0,
+      "y": 2,
+      "width": 158,
+      "height": 56,
+      "title": "jarvis2",
+      "working_dir": "/home/bkaplan/WORKSPACE/IFT-REPOS/jarvis2"
+    },
+    {
+      "x": 158,
+      "y": 30,
+      "width": 79,
+      "height": 28,
+      "title": "common",
+      "working_dir": "/home/bkaplan/WORKSPACE/IFT-REPOS/common"
+    },
+    {
+      "x": 237,
+      "y": 35,
+      "width": 79,
+      "height": 23,
+      "title": "Terminal 12b485ba",
+      "working_dir": "/home/bkaplan/WORKSPACE/IFT-REPOS/jarvis2-front",
+      "minimized": true
+    },
+    {
+      "x": 158,
+      "y": 2,
+      "width": 158,
+      "height": 28,
+      "title": "anomalieadresse",
+      "working_dir": "/home/bkaplan/WORKSPACE/IFT-REPOS/anomalieadresse"
+    },
+    {
+      "x": 237,
+      "y": 30,
+      "width": 79,
+      "height": 28,
+      "title": "jarvis2-front",
+      "working_dir": "/home/bkaplan/WORKSPACE/IFT-REPOS/jarvis2-front"
+    }
+  ],
+  "screen_width": 340,
+  "screen_height": 58
+}
