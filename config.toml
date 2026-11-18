@@ -130,10 +130,10 @@ prev_workspace = ["shift+alt+h"]
 next_workspace = ["shift+alt+l"]   
 
 [keybindings.terminal_mode]
-terminal_focus_left  = ["alt+h"]   # libère alt+flèches (mot par mot dans le shell)
-terminal_focus_down  = ["alt+j"]
-terminal_focus_up    = ["alt+k"]
-terminal_focus_right = ["alt+l"]
+terminal_focus_left  = ["ctrl+alt+h"]   # libère alt+flèches et alt+hjkl pour le shell
+terminal_focus_down  = ["ctrl+alt+j"]
+terminal_focus_up    = ["ctrl+alt+k"]
+terminal_focus_right = ["ctrl+alt+l"]
 
 [keybindings.prefix_mode]
 prefix_exit_mode     = ["esc", "ctrl+space"]   # leader leader → window mode
@@ -166,3 +166,6 @@ zoom_borderless = false
 zoom_size = 95
 window_title_format = "{title}"
 calm = false
+
+[agents]
+enabled = true
