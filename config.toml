@@ -130,10 +130,11 @@ prev_workspace = ["shift+alt+h"]
 next_workspace = ["shift+alt+l"]   
 
 [keybindings.terminal_mode]
-terminal_focus_left  = ["ctrl+alt+h"]   # libère alt+flèches et alt+hjkl pour le shell
-terminal_focus_down  = ["ctrl+alt+j"]
-terminal_focus_up    = ["ctrl+alt+k"]
-terminal_focus_right = ["ctrl+alt+l"]
+# mêmes touches que tuios-nvim-navigator (ctrl+h/j/k/l)
+terminal_focus_left  = ["ctrl+h"]
+terminal_focus_down  = ["ctrl+j"]
+terminal_focus_up    = ["ctrl+k"]
+terminal_focus_right = ["ctrl+l"]
 
 [keybindings.prefix_mode]
 prefix_exit_mode     = ["esc", "ctrl+space"]   # leader leader → window mode
@@ -150,18 +151,25 @@ type = "popup"
 command = 'dir=$(find $ws -mindepth 1 -maxdepth 2 -type d | fzf) && tuios switch-session --create --cwd "$dir" "$(basename "$dir")"'
 description = "Open a project"
 
+[[keybindings.command]]
+key = "ctrl+alt+l"
+type = "shell"
+command = 'tuios send-keys -w "$TUIOS_ACTIVE_PANE_ID" ctrl+l'
+description = "Clear (ctrl+l envoyé au pane, ctrl+l étant pris par la navigation)"
+
 [spotlight]
 enabled = false
 
 [screensaver]
 enabled = true
-idle_minutes = 5        # 1 à 240
+idle_minutes = 15        # 1 à 240
 while_busy = false      # true = démarre même si un pane exécute une commande]
 
 [appearance.sidebar]
 enabled = true
 
 [appearance]
+nvim_navigation = true   # navigation Neovim (PR #318)
 zoom_borderless = false
 zoom_size = 95
 window_title_format = "{title}"
